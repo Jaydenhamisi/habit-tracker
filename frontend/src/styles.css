@@ -254,6 +254,10 @@
 /* --- MOBILE / iOS RESPONSIVE ADAPTATION --- */
 @media (max-width: 600px) {
 
+    html, body {
+    font-size: 16px; /* Fixes iOS zoom issue */
+  }
+
   .card {
     width: 90vw;
     padding: 28px;
@@ -285,7 +289,6 @@
     width: 100%;
   }
 }
-
 /* --- INTERACTIVE AUTH LINK (CLEAN + STABLE) --- */
 .link {
   margin-top: 16px;          /* ensures space from button */

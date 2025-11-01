@@ -1,0 +1,26 @@
+/* Full page background with soft gradient */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1f24, #2a2d33);
+  background-size: 400% 400%;
+  animation: bgShift 18s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e8e6e3;
+}
+
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
